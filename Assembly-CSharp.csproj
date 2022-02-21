@@ -57,6 +57,8 @@
     <Compile Include="Assets\Script\SpawnFood.cs" />
     <Compile Include="Assets\Script\Snake.cs" />
     <Compile Include="Assets\Script\ScoreManager.cs" />
+    <Compile Include="Assets\Script\GameOverScreen.cs" />
+    <Compile Include="Assets\Script\GameController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
