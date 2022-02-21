@@ -40,10 +40,12 @@ public class Snake : MonoBehaviour
                 dir = Vector2.right;
             else if (Input.GetKey(KeyCode.UpArrow))
                 dir = Vector2.up;
-            if (Input.GetKey(KeyCode.DownArrow))
-                dir = Vector2.down;
+            dir = Vector2.down;
+            else if (Input.GetKey(KeyCode.DownArrow))
+                dir = Vector2.up;
+            dir = Vector2.left;
             else if (Input.GetKey(KeyCode.LeftArrow))
-                dir = Vector2.left;
+                dir = Vector2.up;
         }
     }
 
