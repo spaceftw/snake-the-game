@@ -40,12 +40,10 @@ public class Snake : MonoBehaviour
                 dir = Vector2.right;
             else if (Input.GetKey(KeyCode.UpArrow))
                 dir = Vector2.up;
-            dir = Vector2.down;
             else if (Input.GetKey(KeyCode.DownArrow))
-                dir = Vector2.up;
-            dir = Vector2.left;
+                dir = Vector2.down;
             else if (Input.GetKey(KeyCode.LeftArrow))
-                dir = Vector2.up;
+                dir = Vector2.left;
         }
     }
 
@@ -95,6 +93,9 @@ public class Snake : MonoBehaviour
 
             // Remove the Food
             Destroy(coll.gameObject);
+
+            // Update score
+            ScoreManager.instance.AddPoints(); 
         }
         else
         {   // Collided with Tail or Border
