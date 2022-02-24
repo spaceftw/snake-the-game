@@ -5,12 +5,11 @@ using UnityEngine.UI;
 
 public class GameOverScreen : MonoBehaviour
 {
-
-    public Text pointsText;
+    public Text scoreText;
     public void Setup(int currentScore)
     {
         gameObject.SetActive(true);
-        pointsText.text = "YOUR SCORE: " + currentScore.ToString();
+        scoreText.text = "YOUR SCORE: " + currentScore.ToString();
     }
 
 

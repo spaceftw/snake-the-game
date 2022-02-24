@@ -97,12 +97,13 @@ public class Snake : MonoBehaviour
             // Update score
             ScoreManager.instance.AddPoints(); 
         }
+
         else if (coll.CompareTag("Border"))
         {   // Collided with Tail or Border
+           
             isDead = true;
-            FindObjectOfType<GameController>().GameOver();
 
-
+            FindObjectOfType<GameController>().GameOver();            
         }
     }
 }
